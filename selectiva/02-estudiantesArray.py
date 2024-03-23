@@ -6,13 +6,13 @@ qualification3 = 0
 qualification4 = 0
 
 for student in students:
-    if student > 80 :
+    if student >= 80 :
         qualification4 += 1
-    elif student > 70 and student < 80: 
+    elif student >= 70 and student <= 80: 
          qualification3 += 1
-    elif student > 50 and student < 70 :
+    elif student >= 50 and student <= 70 :
         qualification2 += 1
-    elif student < 50 :
+    elif student <= 50 :
         qualification1 += 1
 
 print(f"{qualification4} obtuvieron una calificacion mayor a 80");
